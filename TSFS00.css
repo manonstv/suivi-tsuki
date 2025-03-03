@@ -1,0 +1,503 @@
+/* ==================================================
+    CUSTOM RESET
+===================================================== */
+
+.TSFS01 {
+    margin-block: 16px;
+    width: 100%;
+}
+
+.TSFS01 * {
+    box-sizing: border-box;
+    font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #252525;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "Roboto",sans-serif;
+}
+
+.TSFS01 p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.TSFS01 a {
+    color: inherit;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.TSFS01 img {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.TSFS01 ::selection {
+    background-color: #c4bcf2;
+    color: #252525;
+    text-shadow: none;
+}
+
+/* ==================================================
+    FICHE LAYOUT
+===================================================== */
+
+.TSFS01 .fiche-liens {
+    position: relative;
+    margin-inline: auto;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.05);
+    border: 1px solid #efefef;
+    background-color: #fff;
+    width: 100%;
+    min-width: 400px;
+    max-width: 550px;
+}
+
+.TSFS01 .fiche-liens > .header,
+.TSFS01 .fiche-liens > .footer {
+    cursor: default;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fafafa;
+    width: 100%;
+    height: 200px;
+}
+
+.TSFS01 .fiche-liens > .header > .content,
+.TSFS01 .fiche-liens > .footer > .content {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    backdrop-filter: blur(0px);
+    transition: opacity .3s ease-out, backdrop-filter .5s ease-out;
+    padding: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+.TSFS01 .fiche-liens > .header:hover .content,
+.TSFS01 .fiche-liens > .footer:hover .content {
+    opacity: 1;
+    backdrop-filter: blur(3px);
+}
+
+.TSFS01 .fiche-liens .list {
+    padding-right: 6px;
+    overflow: auto;
+    scrollbar-color: #bfbbe0 transparent;
+    scrollbar-width: thin;
+}
+
+.TSFS01 .fiche-liens a.card {
+    display: flex;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #B2B3FF;
+    border-radius: 5px;
+    padding: 16px 10px;
+    overflow: hidden;
+}
+
+.TSFS01 .fiche-liens a.card:not(.fact-list) {
+    transition: background-color .15s ease-out;
+    background-color: transparent;
+}
+
+.TSFS01 .fiche-liens a.card:not(.fact-list):hover {
+    background-color: #f5f4fd;
+}
+
+.TSFS01 .fiche-liens a.card:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+/* ==================================================
+    FICHE HEADER
+===================================================== */
+
+.TSFS01 .fiche-liens > .header > .content > p.title {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 36px !important;
+    letter-spacing: .25px;
+    text-shadow: rgba(0,0,0,.75) 1px 1px 3px;
+}
+
+/* ==================================================
+    FICHE BODY
+===================================================== */
+
+.TSFS01 .fiche-liens > .body {
+    cursor: default;
+    padding: 32px;
+    width: 100%;
+}
+
+.TSFS01 p.title {
+    color: #ff8e38;
+    font-size: 20px !important;
+    font-family:  'lequire';
+    letter-spacing: .25px;
+}
+
+.TSFS01 .heading:not(#about > .heading) {
+    margin-bottom: 12px;
+}
+
+/*  Section About
+===================================================== */
+
+/*  Entête */
+.TSFS01 #about > .heading {
+    margin-bottom: 4px;
+}
+
+.TSFS01 #about > .info,
+.TSFS01 #about .social-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.TSFS01 #about > .info {
+    justify-content: space-between;
+}
+
+.TSFS01 #about .social-list {
+    justify-content: center;
+}
+
+.TSFS01 #about .social-list a.fiche,
+.TSFS01 #about .social-list a.atai,
+.TSFS01 #about .social-list a.insta {
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.TSFS01 .icon {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.TSFS01 #about .social-list a.fiche::before,
+.TSFS01 #about .social-list a.atai::before,
+.TSFS01 #about .social-list a.insta::before {
+    aspect-ratio: 1/1;
+    width: 24px;
+    height: 24px;
+    content: "";
+}
+
+.TSFS01 #about .social-list a.fiche::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%232E2D80' stroke-width='1.25' stroke-linecap='round' stroke-linejoin='round' class='icon icon-tabler icons-tabler-outline icon-tabler-id-badge-2'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M7 12h3v4h-3z' /%3E%3Cpath d='M10 6h-6a1 1 0 0 0 -1 1v12a1 1 0 0 0 1 1h16a1 1 0 0 0 1 -1v-12a1 1 0 0 0 -1 -1h-6' /%3E%3Cpath d='M10 3m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v3a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z' /%3E%3Cpath d='M14 16h2' /%3E%3Cpath d='M14 12h4' /%3E%3C/svg%3E");
+}
+
+.TSFS01 #about .social-list a.atai::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%232E2D80' stroke-width='1.25' stroke-linecap='round' stroke-linejoin='round' class='icon icon-tabler icons-tabler-outline icon-tabler-health-recognition'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M4 8v-2a2 2 0 0 1 2 -2h2' /%3E%3Cpath d='M4 16v2a2 2 0 0 0 2 2h2' /%3E%3Cpath d='M16 4h2a2 2 0 0 1 2 2v2' /%3E%3Cpath d='M16 20h2a2 2 0 0 0 2 -2v-2' /%3E%3Cpath d='M8.603 9.61a2.04 2.04 0 0 1 2.912 0l.485 .39l.5 -.396a2.035 2.035 0 0 1 2.897 .007a2.104 2.104 0 0 1 0 2.949l-3.397 3.44l-3.397 -3.44a2.104 2.104 0 0 1 0 -2.95z' /%3E%3C/svg%3E");
+}
+
+.TSFS01 #about .social-list a.insta::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%232E2D80' stroke-width='1.25' stroke-linecap='round' stroke-linejoin='round' class='icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z' /%3E%3Cpath d='M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0' /%3E%3Cpath d='M16.5 7.5v.01' /%3E%3C/svg%3E");
+}
+
+.TSFS01 #about > .subline {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 24px;
+}
+
+.TSFS01 #about > .subline > p {
+    position: relative;
+    font-size: 12px !important;
+    letter-spacing: .25px;
+}
+
+.TSFS01 #about > .subline > p:not(:last-child):after {
+    margin-left: 4px;
+    content: "·";
+    font-weight: 700;
+}
+
+.TSFS01 #about > .subline p:not(p.love-status) {
+    opacity: .75;
+}
+
+/*  Infos */
+.TSFS01 #about .info-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 24px;
+}
+
+.TSFS01 #about .info-list img.avatar {
+    border-width: 4px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    max-width: 115px;
+    height: auto;
+    object-fit: cover;
+}
+
+.TSFS01 #about .info-list p.fact-list {
+    flex: 1;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #B2B3FF;
+    border-radius: 5px;
+    padding: 12px;
+    max-height: 112px;
+}
+
+.TSFS01 #about .info-list p.fact-list,
+.TSFS01 #about .info-list p.fact-list span {
+    font-size: 13px !important;
+}
+
+.TSFS01 #about span.fun-fact:not(:last-child):after {
+    margin-left: 4px;
+    content: "·";
+    font-weight: 700;
+}
+
+/*  Keywwrds */
+.TSFS01 #about .keyword-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 24px;
+    padding: 5px 0;
+}
+
+.TSFS01 #about .keyword {
+    border-radius: 5px;
+    padding: 2px 14px;
+    width: fit-content;
+}
+
+/*  Section Search
+===================================================== */
+
+.TSFS01 #search .search-list {
+    margin-bottom: 24px;
+    width: 100%;
+    max-height: 435px;
+}
+
+.TSFS01 #search a.search-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.TSFS01 #search p.search-status {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    background-color: #9496fd;
+    padding: 2px 12px 2px 8px;
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 14px !important;
+    letter-spacing: .25px;
+}
+
+.TSFS01 #search p.search-status::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='%23ffffff' class='icon icon-tabler icons-tabler-filled icon-tabler-zoom-exclamation'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M14 3.072a8 8 0 0 1 2.32 11.834l5.387 5.387a1 1 0 0 1 -1.414 1.414l-5.388 -5.387a8 8 0 0 1 -12.905 -6.32l.005 -.285a8 8 0 0 1 11.995 -6.643m-4 8.928a1 1 0 0 0 -1 1l.007 .127a1 1 0 0 0 1.993 -.117l-.007 -.127a1 1 0 0 0 -.993 -.883m0 -6a1 1 0 0 0 -1 1v3a1 1 0 0 0 2 0v-3a1 1 0 0 0 -1 -1' /%3E%3C/svg%3E");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    aspect-ratio: 1/1;
+    width: 16px;
+    height: 16px;
+    content: "";
+}
+
+.TSFS01 #search .card-content {
+    max-height: 60px;
+}
+
+.TSFS01 #search .card-content > p {
+    font-size: 14px !important;
+}
+
+/*  Section Links
+===================================================== */
+
+.TSFS01 #links .link-list {
+    margin-bottom: 24px;
+    width: 100%;
+    max-height: 440px;
+}
+
+.TSFS01 #links a.link-item {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    padding: 10px;
+}
+
+.TSFS01 #links .link-item img {
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    width: 80px;
+    height: auto;
+    object-fit: cover;
+}
+
+.TSFS01 #links .link-item div {
+    flex: 1;
+}
+
+.TSFS01 #links .link-item .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.TSFS01 #links .link-item .link-name {
+    font-weight: 700;
+}
+
+.TSFS01 #links .link-item .link-status {
+    border-radius: 5px;
+    background-color: #9496fd;
+    padding: 2px 10px;
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 12px !important;
+    letter-spacing: .25px;
+}
+
+.TSFS01 #links .link-item .card-content {
+    max-height: 80px;
+}
+
+.TSFS01 #links .link-item .card-content > p {
+    font-size: 14px !important;
+}
+
+/*  Section RP
+===================================================== */
+
+.TSFS01 #rp .rp-list {
+    width: 100%;
+    max-height: 430px;
+}
+
+.TSFS01 #rp a.rp-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.TSFS01 #rp .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.TSFS01 #rp .rp-status {
+    border-radius: 5px;
+    background-color: #9496fd;
+    padding: 2px 10px;
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 12px !important;
+    letter-spacing: .25px;
+}
+
+.TSFS01 #rp p.rp-title {
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    font-weight: 700;
+}
+
+.TSFS01 #rp p.rp-title::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%232E2D80' stroke-width='1.25' stroke-linecap='round' stroke-linejoin='round' class='icon icon-tabler icons-tabler-outline icon-tabler-circle-arrow-up-right'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0' /%3E%3Cpath d='M15 9l-6 6' /%3E%3Cpath d='M15 15v-6h-6' /%3E%3C/svg%3E");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    aspect-ratio: 1/1;
+    width: 20px;
+    height: 20px;
+    content: "";
+}
+
+.TSFS01 #rp .card-content {
+    max-height: 60px;
+}
+
+.TSFS01 #rp .card-content > p {
+    font-size: 14px !important;
+}
+
+/* ==================================================
+    FICHE FOOTER
+===================================================== */
+
+.TSFS01 .fiche-liens > .footer > .content {
+    opacity: 0;
+}
+
+.TSFS01 .fiche-liens > .footer > .content > .content-block {
+    box-shadow: 2px 2px 5px rgba(0,0,0,.15);
+    background-color: #ffffff;
+    padding: 16px;
+    width: 100%;
+    height: fit-content;
+    max-height: 100%;
+    overflow: auto;
+    scrollbar-color: #bfbbe0 transparent;
+    scrollbar-width: thin;
+}
+
+.TSFS01 .fiche-liens > .footer > .content > .content-block > p {
+    font-size: 13px !important;
+    line-height: 1.6;
+}
+
+.TSFS01 .fiche-liens > .footer > .content > .content-block > p span {
+    cursor: text;
+    user-select: all;
+}
+
+/* ==================================================
+    CREDITS
+===================================================== */
+
+.TSFS01 p.credit,
+.TSFS01 p.credit a {
+    font-size: 11px !important;
+}
+
+.TSFS01 p.credit {
+    opacity: .75;
+    cursor: default;
+    margin-top: 8px;
+    width: 100%;
+    text-align: center;
+}
