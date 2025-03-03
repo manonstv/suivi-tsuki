@@ -20,6 +20,7 @@
 .TSFS01 p {
     margin-top: 0;
     margin-bottom: 0;
+    line-height: 1.5;
 }
 
 .TSFS01 a {
@@ -171,6 +172,11 @@
 
 .TSFS01 #about > .info {
     justify-content: space-between;
+    font-style: normal;
+}
+
+.TSFS01 #about > .info p {
+    font-style: normal;
 }
 
 .TSFS01 #about .social-list {
