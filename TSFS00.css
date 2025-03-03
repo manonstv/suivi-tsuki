@@ -306,6 +306,7 @@
 
 .TSFS01 #search .search-list {
     margin-bottom: 24px;
+    padding-bottom: 4px;
     width: 100%;
     max-height: 435px;
 }
@@ -343,7 +344,7 @@
 }
 
 .TSFS01 #search .card-content {
-    max-height: 60px;
+    max-height: 65px;
 }
 
 .TSFS01 #search .card-content > p {
@@ -463,7 +464,7 @@
 }
 
 .TSFS01 #rp .card-content {
-    max-height: 60px;
+    max-height: 65px;
 }
 
 .TSFS01 #rp .card-content > p {
