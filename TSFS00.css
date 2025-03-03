@@ -367,6 +367,9 @@
 }
 
 .TSFS01 #links .link-item img {
+    border-width: 3px;
+    border-style: solid;
+    border-color: #B2B3FF;
     border-radius: 50%;
     aspect-ratio: 1/1;
     width: 80px;
