@@ -267,7 +267,7 @@
 }
 
 .TSFS01 #about span.fun-fact:not(:last-child):after {
-    margin-left: 4px;
+    margin-inline: 4px;
     content: "·";
     font-weight: 700;
 }
